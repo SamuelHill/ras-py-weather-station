@@ -1,0 +1,8 @@
+[Unit]
+Description="Run weather station after 1 minute"
+
+[Timer]
+OnBootSec=45
+
+[Install]
+WantedBy=multi-user.target

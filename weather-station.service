@@ -1,0 +1,9 @@
+[Unit]
+Description=Breadboard and Cobbler Weather Station
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/weather-station.py
+TimeoutStartSec=0
+Restart=always
+RestartSec=5
