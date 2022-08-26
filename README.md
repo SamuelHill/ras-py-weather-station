@@ -30,3 +30,7 @@ Also needs an Influx instance running locally so see setting up [InfluxDB on a P
     pip install RPLCD
 
 Check [this link on circuitpython](https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi) for more about the setup needed for this library.
+
+## Continuous operation
+
+The `.service` and `.timer` files are for systemd. They start up the python script after the pi turns on, and restart it if there is an error.
